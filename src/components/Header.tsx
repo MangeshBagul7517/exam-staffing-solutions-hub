@@ -41,8 +41,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold text-company-blue-800">
-            ExamStaff<span className="text-company-blue-500">Pro</span>
+          <span className={`text-2xl font-bold ${isScrolled ? 'text-company-blue-800' : 'text-white'}`}>
+            ExamStaff<span className={isScrolled ? 'text-company-blue-500' : 'text-company-blue-200'}>Pro</span>
           </span>
         </Link>
 
@@ -54,8 +54,10 @@ const Header = () => {
               to={link.path}
               end={link.path === "/"}
               className={({ isActive }) =>
-                `font-medium text-base hover:text-company-blue-600 transition-colors ${
-                  isActive ? "text-company-blue-600" : "text-gray-700"
+                `font-medium text-base hover:text-company-blue-200 transition-colors ${
+                  isActive 
+                    ? isScrolled ? "text-company-blue-600" : "text-white font-semibold" 
+                    : isScrolled ? "text-gray-700" : "text-white"
                 }`
               }
             >
@@ -68,7 +70,7 @@ const Header = () => {
         <div className="hidden lg:block">
           <Link
             to="/enquiry"
-            className="btn-primary"
+            className={`btn-primary ${!isScrolled && 'bg-white text-company-blue-700 hover:bg-gray-100'}`}
           >
             Request Staffing
           </Link>
@@ -76,7 +78,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-gray-700"
+          className={`lg:hidden ${isScrolled ? 'text-gray-700' : 'text-white'}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >

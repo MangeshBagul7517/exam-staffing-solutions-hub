@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
@@ -217,7 +216,7 @@ const Home = () => {
               <Link to="/enquiry" className="btn-primary bg-white text-company-blue-800 hover:bg-gray-100">
                 Request Staffing
               </Link>
-              <Link to="/contact" className="btn-secondary bg-transparent border-white text-white hover:bg-white/10">
+              <Link to="/contact" className="btn-secondary bg-transparent border-white text-white hover:bg-white/20">
                 Contact Us
               </Link>
             </div>
