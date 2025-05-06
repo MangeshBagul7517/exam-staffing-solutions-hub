@@ -1,4 +1,3 @@
-
 import SectionHeading from "@/components/SectionHeading";
 import TestimonialCard from "@/components/TestimonialCard";
 import { Link } from "react-router-dom";
@@ -276,18 +275,18 @@ const Clients = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 md:py-24 bg-company-blue-800 text-white">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-company-blue-800 to-company-blue-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Join Our Growing List of Satisfied Clients</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Join Our Client Success Stories?</h2>
             <p className="text-xl text-gray-200 mb-8">
-              Experience the difference of working with India's leading manpower solutions provider. Contact us today to discuss your requirements.
+              Contact us today to discuss your manpower requirements and how we can support your organization's goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="btn-primary bg-white text-company-blue-800 hover:bg-gray-100">
                 Contact Us
               </Link>
-              <Link to="/enquiry" className="btn-secondary border-white text-white hover:bg-white/10">
+              <Link to="/enquiry" className="btn-primary bg-company-blue-600 text-white hover:bg-company-blue-700">
                 Request a Quote
               </Link>
             </div>

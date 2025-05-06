@@ -1,4 +1,3 @@
-
 import SectionHeading from "@/components/SectionHeading";
 import { Globe, Clock, CheckCheck, Shield, FileCheck, Coins } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -312,7 +311,7 @@ const WhyChooseUs = () => {
               <Link to="/contact" className="btn-primary bg-white text-company-blue-700 hover:bg-gray-100">
                 Contact Us
               </Link>
-              <Link to="/enquiry" className="btn-secondary border-white text-white hover:bg-white/10">
+              <Link to="/enquiry" className="btn-primary bg-company-blue-600 text-white hover:bg-company-blue-700">
                 Request Staffing
               </Link>
             </div>

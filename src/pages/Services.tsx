@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import SectionHeading from "@/components/SectionHeading";
 import { FileText, Code, Users, CheckCheck, ShieldCheck, Headphones } from "lucide-react";
@@ -310,7 +309,7 @@ const Services = () => {
               <Link to="/contact" className="btn-primary bg-white text-company-blue-800 hover:bg-gray-100">
                 Contact Us
               </Link>
-              <Link to="/enquiry" className="btn-secondary border-white text-white hover:bg-white/10">
+              <Link to="/enquiry" className="btn-primary bg-company-blue-600 text-white hover:bg-company-blue-700">
                 Request a Quote
               </Link>
             </div>

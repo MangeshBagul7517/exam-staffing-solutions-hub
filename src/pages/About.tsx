@@ -1,6 +1,6 @@
-
 import SectionHeading from "@/components/SectionHeading";
 import { Shield, Award, Users, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -280,20 +280,20 @@ const About = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 md:py-24 bg-company-blue-700 text-white">
+      <section className="py-16 md:py-24 bg-company-blue-800 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center animate-on-scroll">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Partner with ExamStaffPro</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Partner With Us?</h2>
             <p className="text-xl text-gray-200 mb-8">
-              Experience the difference of working with India's premier manpower solutions provider. Our nationwide presence and specialized expertise ensure your staffing needs are met with precision and professionalism.
+              Contact us today to discuss how our staffing solutions can help your organization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="btn-primary bg-white text-company-blue-700 hover:bg-gray-100">
-                Contact Our Team
-              </a>
-              <a href="/enquiry" className="btn-secondary border-white text-white hover:bg-white/10">
+              <Link to="/contact" className="btn-primary bg-white text-company-blue-800 hover:bg-gray-100">
+                Contact Us
+              </Link>
+              <Link to="/enquiry" className="btn-primary bg-company-blue-600 text-white hover:bg-company-blue-700">
                 Request Staffing
-              </a>
+              </Link>
             </div>
           </div>
         </div>
